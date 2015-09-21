@@ -1,10 +1,10 @@
 #' Calculating Date of Conception from Date of Birth
 #'
 #' @param x a vector of birth dates
-#' @param format a text string explicating the date format for x, defaults to "%d.%m.%Y".
-#' @param get either "point" or "interval" for just the point estimate or the interval boundaries, using a standard deviation of 13 days, respectively.
+#' @param format a text string explicating the date format for x, defaults to `%d.%m.%Y`.
+#' @param get either `point` or `interval` for just the point estimate or the interval boundaries, using a standard deviation of 13 days, respectively.
 #' @param sd indicates the width of the uncertainty interval as multiples of the standard deviation (13 days).
-#' @return a vector of estimated dates of conception (for "point") or a data.frame of dates of conception and lower and upper boundaries
+#' @return a vector of estimated dates of conception (for `point`) or a data.frame of dates of conception and lower and upper boundaries
 #' @keywords birthday conception naegele
 #' @export
 #' @examples
