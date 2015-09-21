@@ -1,7 +1,7 @@
 Package: MadeOn
-Title: Calculate date of conception or date of birth
 Version: 0.0.1
 Date: 2015-09-21
+Title: Calculate date of conception or date of birth
 Authors@R: person("Jan", "Multmeier", role = c("aut", "cre“), email= “jan.multmeier@gmail.com")
 Description: Let’s you calculate the estimated date of birth from the date of the last menstrual cycle, or the date of conception from the date of birth, using Naegele’s rule.
 Depends: R (>= 3.1.3)
