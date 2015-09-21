@@ -1,9 +1,9 @@
 #' Calculating Date of Birth from the First Day of the Last Menstrual Cycle
 #'
 #' @param x a vector, first day of the last menstrual cycle
-#' @param format a text string explicating the date format for x, defaults to `%d.%m.%Y`.
-#' @param get either `point` or `interval` for just the point estimate or the interval boundaries, using a standard deviation of 13 days, respectively.
-#' @param sd indicates the width of the uncertainty interval as multiples of the standard deviation (13 days).
+#' @param format a text string explicating the date format for x, defaults to "%d.%m.%Y"
+#' @param get either `point` or `interval` for just the point estimate or the interval boundaries, using a standard deviation of 13 days, respectively
+#' @param sd indicates the width of the uncertainty interval as multiples of the standard deviation (13 days)
 #' @return a vector of estimated dates of birth (for `point`) or a data.frame of dates of birth and lower and upper boundaries
 #' @keywords birthday naegele
 #' @export
