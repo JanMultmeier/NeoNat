@@ -18,10 +18,10 @@ BornBy <- function(x,format="%d.%m.%Y",get="point",sd=1.96) {
   i_high <- birthDate + sd*13
   
   if (get=="point"){
-    output <- birthDate
+    output <- format(birthDate,format)
   }
   if (get=="interval"){
-    output <- data.frame(birthDate,i_low,i_high)
+    output <- data.frame(format(birthDate,format),format(i_low,format),format(i_high,format))
     colnames(output) <- c("Date of Birth","lower estimate","upper estimate")
   }
   return(output)

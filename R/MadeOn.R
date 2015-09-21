@@ -18,10 +18,10 @@ MadeOn <- function(x,format="%d.%m.%Y",get="point",sd=1.96) {
   i_high <- conceptionDate + sd*13
   
   if (get=="point"){
-    output <- conceptionDate
+    output <- format(conceptionDate,format)
   }
   if (get=="interval"){
-    output <- data.frame(conceptionDate,i_low,i_high)
+    output <- data.frame(format(conceptionDate,format),format(i_low,format),format(i_high,format))
     colnames(output) <- c("Date of Conception","lower estimate","upper estimate")
   }
   return(output)
